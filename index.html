@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pré-qualificação | X Capital</title>
+  <meta name="description" content="Formulário de pré-qualificação da X Capital para análise de perfil e estratégia patrimonial." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="brand-box">
+          <span class="brand-mark">XC</span>
+          <span class="brand-text">X Capital Partners</span>
+        </div>
+
+        <p class="eyebrow">Pré-qualificação de investimento</p>
+        <h1>Descubra qual estratégia combina melhor com seu momento financeiro.</h1>
+        <p class="subtitle">
+          Responda algumas perguntas rápidas para a equipe da X Capital entender seu perfil e apresentar um caminho alinhado ao seu objetivo.
+        </p>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="form-card">
+        <div class="form-header">
+          <h2>Comece sua análise</h2>
+          <p>Leva menos de 2 minutos.</p>
+        </div>
+
+        <form id="leadForm">
+          <input type="hidden" name="origem" id="origem" value="formulario-xcapital" />
+
+          <div class="field-grid two">
+            <label>
+              <span>Nome completo</span>
+              <input type="text" name="nome" placeholder="Seu nome" required />
+            </label>
+
+            <label>
+              <span>WhatsApp</span>
+              <input type="tel" name="whatsapp" placeholder="(00) 00000-0000" required />
+            </label>
+          </div>
+
+          <label>
+            <span>Cidade e estado</span>
+            <input type="text" name="cidade_estado" placeholder="Ex: Jaú, SP" required />
+          </label>
+
+          <fieldset>
+            <legend>Você é:</legend>
+            <div class="options three">
+              <label class="option"><input type="radio" name="perfil" value="Autônomo" required><span>Autônomo</span></label>
+              <label class="option"><input type="radio" name="perfil" value="CLT"><span>CLT</span></label>
+              <label class="option"><input type="radio" name="perfil" value="Empresário"><span>Empresário</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Quanto fatura por ano?</legend>
+            <div class="options">
+              <label class="option"><input type="radio" name="faturamento_anual" value="Até R$ 50 mil" required><span>Até R$ 50 mil</span></label>
+              <label class="option"><input type="radio" name="faturamento_anual" value="Até R$ 100 mil"><span>Até R$ 100 mil</span></label>
+              <label class="option"><input type="radio" name="faturamento_anual" value="Até R$ 200 mil"><span>Até R$ 200 mil</span></label>
+              <label class="option"><input type="radio" name="faturamento_anual" value="Até R$ 500 mil"><span>Até R$ 500 mil</span></label>
+              <label class="option"><input type="radio" name="faturamento_anual" value="Acima de R$ 1 milhão"><span>Acima de R$ 1 milhão</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Pensando em investimento hoje, qual opção combina melhor com você?</legend>
+            <div class="options">
+              <label class="option"><input type="radio" name="objetivo" value="Comprar um imóvel para morar" required><span>Comprar um imóvel para morar</span></label>
+              <label class="option"><input type="radio" name="objetivo" value="Comprar um imóvel para alugar e deixar se pagar"><span>Comprar um imóvel para alugar e deixar se pagar</span></label>
+              <label class="option"><input type="radio" name="objetivo" value="Ter uma opção de investimento"><span>Ter uma opção de investimento</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Quanto de contribuição mensal hoje não atrapalha seu orçamento?</legend>
+            <div class="options">
+              <label class="option"><input type="radio" name="contribuicao_mensal" value="Até R$ 500 por mês" required><span>Até R$ 500 por mês</span></label>
+              <label class="option"><input type="radio" name="contribuicao_mensal" value="De R$ 500 a R$ 1.500 por mês"><span>De R$ 500 a R$ 1.500 por mês</span></label>
+              <label class="option"><input type="radio" name="contribuicao_mensal" value="De R$ 1.500 a R$ 3.000 por mês"><span>De R$ 1.500 a R$ 3.000 por mês</span></label>
+              <label class="option"><input type="radio" name="contribuicao_mensal" value="De R$ 3.000 a R$ 5.000 por mês"><span>De R$ 3.000 a R$ 5.000 por mês</span></label>
+              <label class="option"><input type="radio" name="contribuicao_mensal" value="Acima de R$ 5.000 por mês"><span>Acima de R$ 5.000 por mês</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Quando você pretende iniciar esse projeto?</legend>
+            <div class="options">
+              <label class="option"><input type="radio" name="prazo_inicio" value="O quanto antes" required><span>O quanto antes</span></label>
+              <label class="option"><input type="radio" name="prazo_inicio" value="Nos próximos 3 meses"><span>Nos próximos 3 meses</span></label>
+              <label class="option"><input type="radio" name="prazo_inicio" value="Nos próximos 6 meses"><span>Nos próximos 6 meses</span></label>
+              <label class="option"><input type="radio" name="prazo_inicio" value="Ainda estou estudando"><span>Ainda estou estudando</span></label>
+            </div>
+          </fieldset>
+
+          <label>
+            <span>Observação, se quiser</span>
+            <textarea name="observacao" rows="4" placeholder="Conte algo importante sobre seu objetivo"></textarea>
+          </label>
+
+          <button id="submitBtn" type="submit">Enviar pré-qualificação</button>
+          <p class="privacy">Ao enviar, você autoriza o contato da equipe X Capital pelo WhatsApp.</p>
+          <div id="message" class="message" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <aside class="info-card">
+        <h3>Por que responder?</h3>
+        <p>Com essas informações, a equipe consegue entender seu momento e evitar uma proposta genérica.</p>
+        <ul>
+          <li>Análise inicial do seu perfil</li>
+          <li>Direcionamento por objetivo</li>
+          <li>Contato consultivo pelo WhatsApp</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
