@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
 
-const SCRIPT_URL = 'COLE_AQUI_A_URL_DO_SEU_GOOGLE_APPS_SCRIPT';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwyI9okq2Nbx5Ys9Bz2DQHl3-IctlpSlyApaQjmcw1Cyd77nqxiikxO8RGlnzCfGhKp/exec';
 
 const initialForm = {
   nome: '',
