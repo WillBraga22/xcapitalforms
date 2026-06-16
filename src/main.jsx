@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './styles.css';
 
 const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwyI9okq2Nbx5Ys9Bz2DQHl3-IctlpSlyApaQjmcw1Cyd77nqxiikxO8RGlnzCfGhKp/exec';
+const WHATSAPP_GROUP_URL = 'https://chat.whatsapp.com/CMzZi47QRB4H3ETRaORxuJ';
 
 const initialForm = {
   nome: '',
@@ -48,7 +49,7 @@ function App() {
       });
 
       setStatus('success');
-      setMessage('Cadastro recebido com sucesso. A equipe da X Capital vai analisar seu perfil e entrar em contato.');
+      setMessage('Cadastro recebido com sucesso. Agora entre no grupo oficial da palestra para receber as informações, avisos e novidades do evento.');
       setForm(initialForm);
     } catch (error) {
       setStatus('error');
@@ -107,6 +108,12 @@ function App() {
           <button type="submit" disabled={status === 'loading'}>{status === 'loading' ? 'Enviando...' : 'Enviar pré-qualificação'}</button>
 
           {message && <p className={`message ${status}`}>{message}</p>}
+
+          {status === 'success' && (
+            <a className="whatsappButton" href={WHATSAPP_GROUP_URL} target="_blank" rel="noreferrer">
+              Entrar no grupo da palestra
+            </a>
+          )}
         </form>
       </section>
     </main>

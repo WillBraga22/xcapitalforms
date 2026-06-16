@@ -21,6 +21,7 @@ legend { font-weight: 800; margin-bottom: 12px; }
 .option:hover { border-color: #1f1f1f; background: #fafafa; }
 .option input { width: 18px; height: 18px; }
 button { width: 100%; border: 0; border-radius: 16px; padding: 17px 20px; font-size: 17px; font-weight: 800; background: #191919; color: #fff; cursor: pointer; margin-top: 12px; }
+.whatsappButton { width: 100%; display: flex; align-items: center; justify-content: center; text-align: center; text-decoration: none; border-radius: 16px; padding: 17px 20px; font-size: 17px; font-weight: 800; background: #1f7a3f; color: #fff; margin-top: 12px; }
 button:disabled { opacity: .7; cursor: not-allowed; }
 .message { padding: 14px; border-radius: 14px; line-height: 1.45; font-weight: 700; }
 .message.success { background: #e9f7ed; color: #155724; }

@@ -5,7 +5,7 @@ Projeto em Vite para publicar na Vercel sem erro de 404.
 ## Arquivos principais
 
 - `index.html`: entrada do site
-- `src/main.jsx`: formulário e envio para Google Apps Script
+- `src/main.jsx`: formulário, envio para Google Apps Script e botão do grupo de WhatsApp
 - `src/styles.css`: visual do formulário
 - `public/xcapital-predio.jpeg`: imagem usada no topo
 - `google-apps-script.js`: código para colar no Apps Script da planilha
@@ -32,3 +32,13 @@ Install Command: npm install
 6. Libere acesso para qualquer pessoa.
 7. Copie a URL do Apps Script.
 8. Cole a URL no arquivo `src/main.jsx`, na variável `SCRIPT_URL`.
+
+## Grupo de WhatsApp
+
+Depois que o lead envia o formulário com sucesso, aparece um botão para entrar no grupo oficial da palestra.
+
+Para alterar o link do grupo, edite no arquivo `src/main.jsx`:
+
+```js
+const WHATSAPP_GROUP_URL = 'https://chat.whatsapp.com/CMzZi47QRB4H3ETRaORxuJ';
+```
