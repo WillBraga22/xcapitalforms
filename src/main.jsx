@@ -75,7 +75,12 @@ function App() {
       <section className="formWrap">
         <form className="card" onSubmit={handleSubmit}>
           <h2>Pré-qualificação</h2>
-          <p className="intro">Suas respostas ajudam nossa equipe a preparar uma análise mais objetiva para o seu projeto.</p>
+<p className="intro">
+  O preenchimento deste formulário é de extrema importância para que o conteúdo da palestra seja direcionado ao perfil dos participantes.
+</p>
+<p className="intro">
+  Com base nas suas respostas, conseguimos preparar uma apresentação mais prática, objetiva e alinhada ao seu momento financeiro.
+</p>
 
           <label>
             Nome completo
