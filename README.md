@@ -42,3 +42,6 @@ Para alterar o link do grupo, edite no arquivo `src/main.jsx`:
 ```js
 const WHATSAPP_GROUP_URL = 'https://chat.whatsapp.com/CMzZi47QRB4H3ETRaORxuJ';
 ```
+
+
+Atualização: o formulário agora pergunta se a participação será presencial ou online, e o Apps Script grava essa informação na coluna Participação.

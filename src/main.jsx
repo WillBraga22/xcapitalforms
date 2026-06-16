@@ -9,6 +9,7 @@ const initialForm = {
   nome: '',
   whatsapp: '',
   cidadeEstado: '',
+  participacao: '',
   perfil: '',
   faturamento: '',
   objetivo: '',
@@ -90,6 +91,8 @@ function App() {
             Cidade e estado
             <input name="cidadeEstado" value={form.cidadeEstado} onChange={updateField} required placeholder="Ex: Jaú, SP" />
           </label>
+
+          <Fieldset title="Você vai participar da palestra de qual forma?" name="participacao" value={form.participacao} updateField={updateField} options={["Presencial", "Online"]} />
 
           <Fieldset title="Hoje você é" name="perfil" value={form.perfil} updateField={updateField} options={["Autônomo", "CLT", "Empresário"]} />
 
